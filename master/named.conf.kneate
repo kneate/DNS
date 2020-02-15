@@ -1,0 +1,11 @@
+zone "kneate" {
+    type master;
+    file "/etc/bind/zones/kneate.zone";
+    allow-transfer { any; };
+};
+
+zone "f.ip6.arpa" {
+    type master;
+    file "/etc/bind/zones/ipv6.zone";
+    allow-transfer { any; };
+};

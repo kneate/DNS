@@ -1,0 +1,145 @@
+
+masters master-opennic-ips {
+    161.97.219.84;
+    163.172.168.171;
+    94.103.153.176;
+    207.192.71.13;
+    178.63.116.152;
+    51.77.227.84;
+    188.226.146.136;
+	51.75.173.177;
+	79.124.7.81;
+	144.76.103.143;
+	
+    2001:470:4212:10:0:100:53:10;
+    2001:bc8:4400:2100::17:213;
+    2a01:4f8:141:4281::999;
+    2001:470:1f04:ebf::2;
+	2a01:4f8:192:43a5::2;
+};
+
+zone "bbs" in {
+	type slave;
+	file "/etc/bind/opennic/slave/bbs.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "chan" in {
+	type slave;
+	file "/etc/bind/opennic/slave/chan.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "cyb" in {
+	type slave;
+	file "/etc/bind/opennic/slave/cyb.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "dns.opennic.glue" in {
+	type slave;
+	file "/etc/bind/opennic/slave/dns.opennic.glue.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "dyn" in {
+	type slave;
+	file "/etc/bind/opennic/slave/dyn.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "epic" in {
+	type slave;
+	file "/etc/bind/opennic/slave/epic.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "geek" in {
+	type slave;
+	file "/etc/bind/opennic/slave/geek.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "gopher" in {
+	type slave;
+	file "/etc/bind/opennic/slave/gopher.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "indy" in {
+	type slave;
+	file "/etc/bind/opennic/slave/indy.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "libre" in {
+	type slave;
+	file "/etc/bind/opennic/slave/libre.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "neo" in {
+	type slave;
+	file "/etc/bind/opennic/slave/neo.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "null" in {
+	type slave;
+	file "/etc/bind/opennic/slave/null.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "o" in {
+	type slave;
+	file "/etc/bind/opennic/slave/o.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "opennic.glue" in {
+	type slave;
+	file "/etc/bind/opennic/slave/opennic.glue.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "oss" in {
+	type slave;
+	file "/etc/bind/opennic/slave/oss.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "oz" in {
+	type slave;
+	file "/etc/bind/opennic/slave/oz.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "parody" in {
+	type slave;
+	file "/etc/bind/opennic/slave/parody.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};
+
+zone "pirate" in {
+	type slave;
+	file "/etc/bind/opennic/slave/pirate.zone";
+	notify no;
+	masters {master-opennic-ips; };
+};

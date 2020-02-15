@@ -1,0 +1,19 @@
+$TTL    604800
+@       IN      SOA     ns1.hub.kneate. root.nic.kneate. (
+                        20200215 ; YYYY/MM/DD
+                        604800
+                        86400
+                        2419200
+                        604800 )
+
+
+hub.kneate.       IN NS      ns1.nic.kneate.
+hub.kneate.       IN NS      ns2.nic.kneate.
+
+; hub.kneate. will point to your closet hub
+hub.kneate.       IN AAAA    fc00:0000:0000:F002:0000:0000:0000:0001
+www.hub.kneate.   IN CNAME   hub.kneate.
+
+
+
+

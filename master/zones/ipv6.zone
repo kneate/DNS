@@ -1,0 +1,19 @@
+$TTL    604800
+@       IN      SOA     ns1.nic.kneate. root.nic.kneate. (
+                        20200215 ; YYYY/MM/DD
+                        604800
+                        86400
+                        2419200
+                        604800 )
+
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.F.0.0.0.0.0.0.0.0.0.0.c.f.ip6.    IN      PRT      ns1.nic.kneate.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.0.F.0.0.0.0.0.0.0.0.0.0.c.f.ip6.    IN      PRT      ns2.nic.kneate.
+c.f.ipv6.    IN      NS      rdns2.nic.kneate.
+
+
+; fc00-0000-000F-0000 start
+1.0.0.0.F.0.0.0.0.0.0.0.0.0.c.f.ip6.    IN      NS      ns1.zarlo.kneate.
+1.0.0.0.F.0.0.0.0.0.0.0.0.0.c.f.ip6.    IN      NS      ns2.zarlo.kneate.
+
+
+; fc00-0000-000F-0000 end

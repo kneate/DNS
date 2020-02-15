@@ -1,0 +1,32 @@
+$TTL    604800
+@       IN      SOA     ns1.nic.kneate. root.nic.kneate. (
+                        20200215 ; YYYY/MM/DD
+                        604800
+                        86400
+                        2419200
+                        604800 )
+
+ns1.nic.kneate.   IN AAAA    fc00:0000:0000:F000:0000:0000:0000:0001
+ns2.nic.kneate.   IN AAAA    fc00:0000:0000:F001:0000:0000:0000:0001
+
+rdns1.nic.kneate. IN AAAA    fc00:0000:0000:F000:0000:0000:0000:0001
+rdns2.nic.kneate. IN AAAA    fc00:0000:0000:F001:0000:0000:0000:0001
+
+
+kneate.           IN NS      ns1.nic.kneate.
+kneate.           IN NS      ns2.nic.kneate.
+
+nic.kneate.       IN NS      ns1.nic.kneate.
+nic.kneate.       IN NS      ns2.nic.kneate.
+
+
+; zarlo.kneate. start
+
+ns1.zarlo.kneate. IN AAAA    fc00:0000:000F:0001:0000:0000:0000:0001
+ns2.zarlo.kneate. IN AAAA    fc00:0000:000F:0001:0000:0000:0000:0001
+
+zarlo.kneate.     IN NS      ns1.zarlo.kneate.
+zarlo.kneate.     IN NS      ns2.zarlo.kneate.
+
+; zarlo.kneate. end
+
